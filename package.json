@@ -5,7 +5,8 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
