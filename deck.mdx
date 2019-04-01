@@ -1,4 +1,4 @@
-import { Head, Notes } from 'mdx-deck'
+import { Head, Notes, Image, Appear } from 'mdx-deck'
 
 export { theme } from './theme'
 
@@ -6,18 +6,284 @@ export { theme } from './theme'
   <title>Presentation Title</title>
 </Head>
 
-# Hello
+<Image src="https://media0.giphy.com/media/ZYOybCzZvpcY0/giphy.gif" size="contain" style={{
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flex: 1,
+  flexDirection: 'column'
+  }}
+/>
 
 ---
 
-## Edit this file
-
-To create your presentation
-
-<Notes>
-Create speaker notes with the Notes component
-</Notes>
+## Co z matematyki jest nam potrzebne w programowaniu?
+Logika!
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+## Co z fizyki jest nam potrzebne przy tworzeniu snake'a?
+zasady dynamiki Newtona
+
+znajomość fizyki ciała stałego
+
+elektrodynamika klasyczna
+
+podstawy mechaniki kwantowej
+
+---
+
+## Co z fizyki jest nam potrzebne przy tworzeniu snake'a?
+<del>zasady dynamiki Newtona</del>
+<br/><br/>
+<del>znajomość fizyki ciała stałego</del>
+<br/><br/>
+<del>elektrodynamika klasyczna</del>
+<br/><br/>
+<del>podstawy mechaniki kwantowej</del>
+<br/><br/>
+
+---
+
+## Co z matematyki jest nam potrzebne przy tworzeniu snake'a?
+
+znajomość kartezjańskiego układu współrzędnych
+
+wektory
+
+---
+
+## Kartezjański układ współrzędnych
+
+![Kartezjański układ współrzędnych](https://i.stack.imgur.com/TKyga.png)
+
+---
+
+## Co to jest?
+
+---
+
+![płótno](https://upload.wikimedia.org/wikipedia/commons/8/87/Weave.jpg)
+
+---
+
+## płótno (_ang. canvas_)
+
+![robot drawing on canvas](https://eloquentjavascript.net/img/chapter_picture_17.jpg)
+
+---
+
+## Kartezjański układ współrzędnych vs canvas
+
+![Kartezjański układ współrzędnych vs Canvas](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/03/1393985491canvas-coordinate-space.png)
+
+---
+
+## Z jakich części składa się gra?
+
+<ul>
+  <Appear>
+    <li>Rysowanie</li>
+    <li>Animacje</li>
+    <li>Przeliczanie</li>
+    <li>Reagowanie na sterowanie</li>
+  </Appear>
+</ul>
+
+---
+
+## Jak działają animacje?
+
+---
+
+![jak dzialaja animacje](https://media.giphy.com/media/S60BAGcMCRHzy/giphy.gif)
+
+---
+
+Bardzo szybkie przerysowywanie rysunków
+
+(google: Flipbook)
+
+---
+
+HTML / CSS / JS
+
+![html css js](https://qph.fs.quoracdn.net/main-qimg-94ef35a803ae08d51070a2c3c0434723.webp)
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ae2euEP5g48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+# To do dzieła!
+
+- ściągamy [szablon do gry](https://www3.zippyshare.com/v/OV5sVF2A/file.html)
+- otwieramy folder w [vs code](https://code.visualstudio.com/)
+- programujemy!
+
+---
+
+### Canvas
+
+rysowanie kwadratu reprezentującego cały ekran gry
+
+<iframe src="https://codesandbox.io/embed/yl124q77x?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie węza
+
+z czego składa się wąz?
+
+<iframe src="https://codesandbox.io/embed/kw825lw323?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie węza
+
+konstruowanie koordynatów opisujących koordynaty węza
+
+<iframe src="https://codesandbox.io/embed/rl7q4k8vkn?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie węza
+
+tablica - struktura danych do trzymania większej ilości koordynatów
+
+<iframe src="https://codesandbox.io/embed/y036x12x89?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie węza
+
+iterowanie po tablicy - rysowanie całego węza
+
+<iframe src="https://codesandbox.io/embed/kkjo2yx1lo?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Przesuwanie węza
+
+w jaki sposób przesunąć węza?
+
+![wektor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpdzBQWsWfuTrJD2KCAnaGtjEtOZrUTMbb1KyTgjwoyARg_Qbf_A)
+
+---
+
+### Przesuwanie węza
+
+napisanie i wywołanie funkcji 1 raz
+
+<iframe src="https://codesandbox.io/embed/l4joyy0jy9?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Przesuwanie węza
+
+wywołanie funkcji do przesuwania węza n razy
+
+<iframe src="https://codesandbox.io/embed/q3wkw4zvnj?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Przesuwanie węza
+
+stworzenie funkcji do narysowania tego ekranu
+
+<iframe src="https://codesandbox.io/embed/7lpr2orm1?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+## Tworzenie pętli gry
+- stworzenie funkcji, która co pewien czas będzie wykonywala serie innych funkcji
+- czyszczenie ekranu
+- rysowanie weza
+
+---
+
+### Tworzenie pętli gry
+
+ustawienie interwału, ktory automatycznie wywola pewne funkcje
+
+<iframe src="https://codesandbox.io/embed/olywkqn0yy?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Dodanie systemu sterowania
+
+Zmiana kierunku przesuwania kiedy wciskamy klawisz
+
+<iframe src="https://codesandbox.io/embed/zn3ljl8lkl?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Dodanie systemu sterowania
+
+Blokowanie zmiany kierunku zeby nie mozna bylo przesuwac weza w przeciwnym kierunku
+
+<iframe src="https://codesandbox.io/embed/l2wx25jo3q?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie jablka dla weza
+
+losowanie miejsca, gdzie mamy narysowac jablko
+
+<iframe src="https://codesandbox.io/embed/q3q48yl1w4?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie jablka dla weza
+
+rysowanie jabłka w wylosowanym miejscu (byle nie na wezu!!!)
+
+<iframe src="https://codesandbox.io/embed/vjoxrmzqm0?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Rysowanie jablka dla weza
+
+sprawdzanie czy waz zjadl jablko
+
+<iframe src="https://codesandbox.io/embed/3kppoq488q?codemirror=1&fontsize=14&hidenavigation=1&initialpath=index.js" title="Canvas" style={{
+  width:'1000px', height:'550px', border:0, borderRadius: '4px', overflow:'hidden'
+}} sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
+### Co dalej? Warunki brzegowe gry
+- dodanie systemu sumowania wyniku
+- co ma się dziac w przypadku natrafienia weza na sciane
+- game over w momencie uderzenia weza w swoj ogon
+
+---
+
+![dziekuje za uwage](https://i1.memy.pl/obrazki/71aa988461_dziekuje_.jpg)
