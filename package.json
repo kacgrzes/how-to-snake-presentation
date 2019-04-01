@@ -8,6 +8,7 @@
     "help": "mdx-deck"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "mdx-deck": "^2.0.6"
   }
 }
