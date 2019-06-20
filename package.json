@@ -8,11 +8,12 @@
     "help": "mdx-deck",
     "predeploy": "npm run-script build",
     "export": "mdx-deck-export pdf deck.mdx",
-    "deploy": "gh-pages -d dist"
+    "deploy": "now"
   },
   "devDependencies": {
     "@mdx-deck/export": "^2.0.6",
     "gh-pages": "^2.0.1",
-    "mdx-deck": "^2.0.6"
+    "mdx-deck": "^2.0.6",
+    "now": "^15.0.3"
   }
 }
